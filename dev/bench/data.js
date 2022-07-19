@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1658220848621,
+  "lastUpdate": 1658221265373,
   "repoUrl": "https://github.com/rmw-lib/rust_tmpl",
   "entries": {
     "Benchmark": [
@@ -508,6 +508,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "add",
             "value": 6,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i@rmw.link",
+            "name": "gcxfd",
+            "username": "gcxfd"
+          },
+          "committer": {
+            "email": "i@rmw.link",
+            "name": "gcxfd",
+            "username": "gcxfd"
+          },
+          "distinct": true,
+          "id": "82bde6af4ced8b592b37836878e65e628f874d18",
+          "message": "🔶",
+          "timestamp": "2022-07-19T16:57:56+08:00",
+          "tree_id": "959b97d1f099a6c5283714e215c174b4088d1955",
+          "url": "https://github.com/rmw-lib/rust_tmpl/commit/82bde6af4ced8b592b37836878e65e628f874d18"
+        },
+        "date": 1658221264250,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "add",
+            "value": 7,
             "range": "± 0",
             "unit": "ns/iter"
           }
