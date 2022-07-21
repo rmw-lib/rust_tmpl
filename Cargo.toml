@@ -1,0 +1,42 @@
+[package]
+name = "rust_tmpl"
+version = "0.0.4"
+edition = "2021"
+authors = ["gcxfd <i@rmw.link>"]
+license = "Apache-2.0"
+description = "rust_tmpl"
+repository = "https://github.com/rmw-lib/rust_tmpl"
+readme = "README.md"
+keywords = ["rust_tmpl"]
+
+[dependencies]
+
+[dev-dependencies]
+anyhow = "1.0.58"
+criterion = "0.3.6"
+rand = "0.8.5"
+
+[profile.bench]
+lto = true
+
+[[bench]]
+name = "main"
+harness = false
+
+#[[bin]]
+# bench = false
+# path = "src/main.rs"
+# name = "rust_tmpl"
+# [profile.release]
+# lto = true
+# codegen-units = 1
+# debug-assertions = false
+# overflow-checks = false
+# opt-level = 3
+# panic = 'abort'
+[features]
+default = []
+# avif = ["dep:ravif", "dep:rgb"]
+#[dependencies.ravif]
+#optional = true
+#version = "0.6.3"
