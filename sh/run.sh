@@ -3,4 +3,7 @@
 DIR=$(dirname $(realpath "$0"))
 cd $DIR
 set -ex
+
+. ./pid.sh
+
 exec cargo run $@

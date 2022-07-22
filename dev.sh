@@ -5,7 +5,6 @@ _DIR=$(dirname $(realpath "$0"))
 cd $_DIR
 
 . ./sh/pid.sh
-
 set -ex
 
 if ! hash watchexec 2>/dev/null; then
@@ -20,7 +19,7 @@ else
 cmd=run
 fi
 
-RUST_BACKTRACE=1 watchexec \
+RUST_BACKTRACE=1 exec watchexec \
   --shell=none -w . \
   -c -r --exts rs,toml \
   --ignore target/ \
