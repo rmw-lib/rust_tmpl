@@ -53,7 +53,7 @@ def main():
   --release \
   --target @(TARGET) \
   -Z build-std=std,panic_abort \
-  -Z build-std-features=panic_immediate_abort # 这一句有时候会导致问题，出问题了可以注释掉
+# -Z build-std-features=panic_immediate_abort # 这一句有时候会导致问题，出问题了可以注释掉
 
   out=f"target/{TARGET}/release/{exe}"
   strip @(out)
