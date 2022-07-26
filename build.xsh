@@ -11,8 +11,7 @@ import tarfile
 PWD = dirname(abspath(__file__))
 
 cd @(PWD)
-
-p".xonshrc".exists() && source .xonshrc
+source .xonshrc
 
 
 @Fire
