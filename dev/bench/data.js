@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1658817786882,
+  "lastUpdate": 1674253088067,
   "repoUrl": "https://github.com/rmw-lib/rust_tmpl",
   "entries": {
     "Benchmark": [
@@ -1258,6 +1258,32 @@ window.BENCHMARK_DATA = {
           {
             "name": "add",
             "value": 7,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "rmw-lib",
+            "username": "rmw-lib"
+          },
+          "committer": {
+            "name": "rmw-lib",
+            "username": "rmw-lib"
+          },
+          "id": "2c487e01b16021c7942c9d6120c0f3032a42ad73",
+          "message": "Bump bumpalo from 3.10.0 to 3.12.0",
+          "timestamp": "2022-07-26T10:18:33Z",
+          "url": "https://github.com/rmw-lib/rust_tmpl/pull/1/commits/2c487e01b16021c7942c9d6120c0f3032a42ad73"
+        },
+        "date": 1674253087340,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "add",
+            "value": 8,
             "range": "± 0",
             "unit": "ns/iter"
           }
